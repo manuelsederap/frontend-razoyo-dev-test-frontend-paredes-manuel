@@ -1,0 +1,36 @@
+<div class="container">
+    <select class="form-select" [(ngModel)]="selectedCar" (change)="onCarSelection()">
+      <option value="">Select a car</option>
+      <option *ngFor="let car of allMakes" [value]="car">{{ car }}</option>
+    </select>
+    <ng-container *ngIf="carsList">
+      <accordion [isAnimated]="true" >
+      <div *ngFor="let car of carsList">
+        <accordion-group heading="{{ car.make + ' ' + car.model }}" (click)="fetchCarDetails(car.id)" [isOpen]="car.id === activeAccordionId">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src={{carImage}} class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{ carMake + ' ' + carModel + ' ' + carYear }}</h5>
+                  <p class="card-text">MPG: {{carMpg}}</p>
+                  <p class="card-text">Seats: {{carSeats}}</p>
+                  <p class="card-text">Price: {{carPrice | currency }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </accordion-group>
+        </div>
+      </accordion>
+    </ng-container>
+  </div>
+
+
+  
+  
+
+
+  
