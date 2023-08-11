@@ -16,9 +16,9 @@ Download Link:
 
 Important:
     If you haven't yet have the backend source code. 
-    Here's the repository link: [Backend Repository:](https://github.com/manuelsederap/backend-razoyo-dev-test-frontend-paredes-manuel)
+    Here's the repository link: [Backend Repository(RazoyoElixir):](https://github.com/manuelsederap/backend-razoyo-dev-test-frontend-paredes-manuel)
 
-    * Before you start the server, please make sure the backend server has already running on your local environment
+    * Before you start the server, please make sure the backend(RazoyoElixir) has already running on your local environment
 
     * after the backend server sucessfully running, you now can run the project using the following command:
 
