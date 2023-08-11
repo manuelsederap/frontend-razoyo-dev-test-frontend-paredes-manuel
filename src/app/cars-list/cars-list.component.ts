@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cars-list',
@@ -61,7 +59,10 @@ export class CarsListComponent implements OnInit {
   }
 
   fetchCarDetails(carId: string) {
-    this.activeAccordionId === carId ? this.activeAccordionId = "invalidid" : this.activeAccordionId = carId;
+    this.activeAccordionId === carId ?
+      this.activeAccordionId = "invalidid" :
+      this.activeAccordionId = carId;
+
     this.http.get<CarInfo>(environment.baseUrl + `/cars/${carId}`)
     .subscribe(result => {
       this.carImage = result.image;

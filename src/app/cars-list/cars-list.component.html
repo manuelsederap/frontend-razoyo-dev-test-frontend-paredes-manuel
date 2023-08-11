@@ -15,14 +15,15 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">{{ carMake + ' ' + carModel + ' ' + carYear }}</h5>
-                  <p class="card-text">MPG: {{carMpg}}</p>
-                  <p class="card-text">Seats: {{carSeats}}</p>
-                  <p class="card-text">Price: {{carPrice | currency }}</p>
+                  <p class="card-text">Price: {{ carPrice | currency }}</p>
+                  <p class="card-text">MPG: {{ carMpg }}</p>
+                  <p class="card-text">Seats: {{ carSeats }}</p>
                 </div>
               </div>
             </div>
           </div>
         </accordion-group>
+        <br/>
         </div>
       </accordion>
     </ng-container>

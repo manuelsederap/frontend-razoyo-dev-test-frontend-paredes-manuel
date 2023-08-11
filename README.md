@@ -2,26 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
-## Development server
+Please make sure you have the right version of project:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    * Angular >= v13.0.1
+    * NodeJS >= 16.17.1
 
-## Code scaffolding
+Download Link:
+     [NodeJS:](https://github.com/coreybutler/nvm-windows/releases)
+     
+     * Once Node.js has been installed, the Angular CLI can be installed using the following command:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+     * Run `npm install -g @angular/cli@13.0.1` to install the Angular CLI
 
-## Build
+Important:
+    [Backend Repository:](https://github.com/manuelsederap/backend-razoyo-dev-test-frontend-paredes-manuel)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    * Before you start the server, please make sure the backend server has already running
 
-## Running unit tests
+    * after the backend server sucessfully running, you now can run the project using the following command:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    * Run `npm install` to update dependency.
 
-## Running end-to-end tests
+    * Run `ng serve` for a dev server.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    * Navigate to `http://localhost:4200/`.
