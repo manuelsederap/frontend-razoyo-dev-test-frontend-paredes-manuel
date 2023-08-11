@@ -15,7 +15,7 @@ Download Link:
      * Run `npm install -g @angular/cli@13.0.1` to install the Angular CLI
 
 Important:
-    [Backend Repository:](https://github.com/manuelsederap/backend-razoyo-dev-test-frontend-paredes-manuel)
+    If you haven't yet have the backend project source code, here's the repository link: [Backend Repository:](https://github.com/manuelsederap/backend-razoyo-dev-test-frontend-paredes-manuel)
 
     * Before you start the server, please make sure the backend server has already running
 
