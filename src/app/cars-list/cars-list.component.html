@@ -1,12 +1,15 @@
 <div class="container">
-    <select class="form-select" [(ngModel)]="selectedCar" (change)="onCarSelection()">
-      <option value="">Select a car</option>
-      <option *ngFor="let car of allMakes" [value]="car">{{ car }}</option>
-    </select>
+    <div>
+      <label style="font-weight: 600; margin-bottom: 2px">Filter by Make:</label>
+      <select class="form-select" [(ngModel)]="selectedCar" (change)="onCarSelection()">
+        <option value="">Any</option>
+        <option *ngFor="let car of allMakes" [value]="car">{{ car }}</option>
+      </select>
+    </div>
     <ng-container *ngIf="carsList">
       <accordion [isAnimated]="true" >
       <div *ngFor="let car of carsList">
-        <accordion-group heading="{{ car.make + ' ' + car.model }}" (click)="fetchCarDetails(car.id)" [isOpen]="car.id === activeAccordionId">
+        <accordion-group heading="{{ car.year + ' ' + car.make + ' ' + car.model }}" (click)="fetchCarDetails(car.id)" [isOpen]="car.id === activeAccordionId">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
